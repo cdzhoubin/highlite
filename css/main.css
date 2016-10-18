@@ -1,56 +1,27 @@
 html,
 body {
-  text-size-adjust: none;
-  -o-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
   font-family: sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0; }
 
-.header {
-  background-color: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
+#header {
   padding: 20px;
-  position: relative;
-  text-align: center;
-  z-index: 1; }
-  @media (min-width: 768px) {
-    .header {
-      position: fixed;
-      width: 100%; } }
-  .header input {
-    appearance: none;
-    -o-appearance: none;
-    -ms-appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    background-color: white;
-    border-radius: 1em;
-    border: 1px solid lightgray;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) inset;
-    box-sizing: border-box;
-    font-size: inherit;
-    height: 2em;
-    max-width: 728px;
-    outline: 0;
-    padding: 0 .5em;
-    width: 100%; }
+  position: relative; }
 
-.content {
-  background-color: white;
-  margin: 0 auto;
-  max-width: 768px;
-  box-sizing: border-box;
-  padding: 20px; }
-  @media (min-width: 768px) {
-    .content {
-      padding-top: 92px; } }
+#content {
+  margin: 20px; }
 
 .highlight {
   background-color: yellow;
   border-radius: .125em; }
+
+input {
+  font-size: 16px;
+  padding: .5em;
+  border-radius: .125em;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid lightgray; }
 
 /*# sourceMappingURL=main.css.map */

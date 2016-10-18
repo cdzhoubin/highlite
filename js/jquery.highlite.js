@@ -1,14 +1,14 @@
-;(function ($, window, document) {    
+;(function ($, window, document) {
     var highlight = function (element, text) {
         // Clear all highlights
         var highlightRegex = /(<span class="highlight">)([^<>]*)(<\/span>)/gi;
         element.innerHTML = element.innerHTML.replace(highlightRegex, "$2");
-        
-        if (!text) { return false; }
-        
+
+        if (!text) { return }
+
         var regex = new RegExp("(" + text + ")", "gi");
         var highlight = '<span class="highlight">$1</span>';
-        
+
         // Highlight matches
         var traverseElement = function (element) {
             var elementHTML = "";
@@ -26,10 +26,10 @@
             }
             element.innerHTML = elementHTML;
         };
-        
+
         traverseElement(element);
     };
-    
+
     $.fn.highlite = function (options) {
         return this.each(function () {
             var element = this;

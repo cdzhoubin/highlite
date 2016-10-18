@@ -10,20 +10,23 @@
         <script src="js/jquery.highlite.js"></script>
     </head>
     <body>
-        <header class="header">
+        <div id="header">
             <input type="search" id="search" placeholder="Search" autofocus>
-        </header>
-        <main class="content">
-            <h1>Title</h1>
-            <h2>Subtitle</h2>
-            <p>Paragraph <b>bold text</b></p>
-            <p>Another paragraph <a href="javascript:void(0)">link</a></p>
-        </main>
+        </div>
+        <div id="content">
+            <h1>Melania Trump: Donald's women accusers are lying</h1>
+            <img alt="Melania Trump" src="http://ichef-1.bbci.co.uk/news/660/cpsprodpb/C676/production/_91960805_hi035859160.jpg" width="356" height="200">
+            <p>Melania Trump has insisted that her husband is a "gentleman" and that the women who allege that he sexually assaulted them are lying.</p>
+            <p>She also said that lewd comments Donald Trump made about women that were caught on videotape were unacceptable but did not represent the man she knows.</p>
+            <p>The Republican presidential nominee was guilty of "boy talk" but was "egged on" by TV host Billy Bush, she added.</p>
+            <p>The tape prompted dozens of Republicans to drop their support for him.</p>
+            <p>In the video, Mr Trump tells Mr Bush, who was then host of NBC's Access Hollywood, that he can force himself on women because he's a star.</p>
+        </div>
         <script>
             $(function () {
                 $("#search").on("search change keyup", function () {
                     var text = this.value;
-                    $(".content").highlite({
+                    $("#content").highlite({
                         text: text
                     });
                 });
