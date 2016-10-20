@@ -20,7 +20,7 @@ $(function () {
 
 ###Plugin options
 
-```javascript
+```
 text
 ```
 Text to be searched and highlighted. 
