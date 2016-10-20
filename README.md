@@ -7,7 +7,7 @@ element.
 
 ###Usage
 
-```
+```javascript
 $(function () {
     $("#search").on("search change keyup", function () {
         var text = this.value;
